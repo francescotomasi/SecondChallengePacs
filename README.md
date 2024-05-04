@@ -1,18 +1,42 @@
 # SecondChallengePacs
 
-1. Introduction
-This challenge involves coding a sparse matrix representation and implementing various operations on it. The primary tasks include implementing matrix-vector multiplication (Av), reading matrices from the Matrix Market format, and testing the code's performance under different scenarios.
+## Introduction
 
-Makefile
-The makefike should work without problem. Make sure you have a compiler Compatibility: The Makefile assumes the g++ compiler is available. If someone is using a different compiler or if g++ is not installed, they would need to change the CXX variable to match their compiler.
+This project involves the implementation of a sparse matrix representation and performing various operations on it. The primary tasks include:
 
-Run the code
-In your terminal, cd to the repository
-and do
+- Implementing matrix-vector multiplication (Av)
+- Reading matrices from the Matrix Market format
+- Testing the performance of the code under different scenarios
+
+## Prerequisites
+
+The Makefile assumes the `g++` compiler is available. If you're using a different compiler or if `g++` is not installed, you would need to change the `CXX` variable in the Makefile to match your compiler.
+
+## Building the Project
+
+To build the project, navigate to the repository in your terminal and execute the following commands:
+
+```bash
 make
-and 
-./main
+```
 
-To download the repository, 
+## Running the Project
+
+After building the project, you can run it using the following command:
+
+```bash
+./main
+```
+
+## Downloading the Repository
+
+To clone this repository to your local machine, run the following command in your terminal:
+
+```bash
 git clone https://github.com/yourusername/SecondChallengePacs.git
-on your terminal
+```
+
+Please replace `yourusername` with your actual GitHub username.
+```
+
+Remember to replace `yourusername` with your actual GitHub username. 
