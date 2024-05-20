@@ -1,6 +1,6 @@
 #ifndef SPARSE_MATRIX_HPP
 #define SPARSE_MATRIX_HPP
-
+// clang-format off
 #include <array>
 #include <cstddef>
 #include <cassert>
@@ -23,6 +23,7 @@ namespace algebra {
     class SparseMatrix {
    
     private:
+    //@note the simplest way to account for row and column major is to change the comparison operator in the map
         std::map<std::array<std::size_t, 2>, T> m_data;
         size_t rows; //Number of rows
         size_t cols; //Number of colums
@@ -67,6 +68,8 @@ namespace algebra {
         std::vector<U> operator*(const std::vector<U>& vec) const;
 
         // read matrix market
+        //@note Why static? It can be a member function that changes the state of the class.
+        // Or, if you prefer, an external function that takes a reference to the object , if you want the reader not to be a member of the class.
         static SparseMatrix from_matrix_market(const std::string& filename);
 
     };
